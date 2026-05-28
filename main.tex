@@ -1,0 +1,124 @@
+\documentclass{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage[hidelinks]{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{bbm}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+%\usepackage{biblatex}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{thmtools} % advanced theorem styles
+\usepackage{enumitem} % environments for enumeration
+\usepackage{tikz}
+\usetikzlibrary{calc, arrows.meta}
+
+\usepackage[
+    backend=biber,
+    style=numeric,
+    citestyle=numeric,
+    doi=false,
+    isbn=false,
+    url=false,
+    maxnames=50]{biblatex}
+\addbibresource{literature.bib}
+
+
+% algorithm environment
+\usepackage[ruled, algosection]{algorithm2e}
+
+%\addbibresource{references.bib}
+
+\declaretheoremstyle[
+  spaceabove=\parsep,
+  spacebelow=0,
+  headfont=\bfseries,
+  notefont=\bfseries,
+  notebraces={(}{)},
+  bodyfont=\normalfont,
+  postheadspace=.5em
+]{definition}
+
+\newtheoremstyle{plain}         % name
+    {\parsep}                   % Space above
+    {}                          % Space below
+    {\itshape}                  % Body font
+    {}                          % Indent amount
+    {\bfseries}                 % Theorem head font
+    {.}                         % Punctuation after theorem head
+    {.5em}                      % Space after theorem head
+    {\thmname{#1}\thmnumber{ #2}\thmnote{ \bfseries (#3)}}                 % Theorem head spec (can be left empty, meaning ‘normal’)
+
+\declaretheorem[sharenumber=algocf]{theorem}
+\declaretheorem[sharenumber=algocf]{lemma}
+\declaretheorem[sharenumber=algocf]{corollary}
+\declaretheorem[sharenumber=algocf]{proposition}
+
+\declaretheorem[sharenumber=algocf]{definition}
+\declaretheorem[sharenumber=algocf]{example}
+\declaretheorem[sharenumber=algocf]{remark}
+\declaretheorem[sharenumber=algocf]{notation}
+
+
+% \newtheorem{assumption}{Assumption}
+% \newtheorem{lemma}{Lemma}
+% \newtheorem{proposition}{Proposition}
+% \newtheorem{example}{Example}
+% \newtheorem{theorem}{Theorem}
+% \newtheorem{corollary}{Corollary}
+% \newtheorem{remark}{Remark}
+% \newtheorem{definition}{Definition}[section]
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
+
+\newcommand{\stab}{\mathrm{Stab}}
+\newcommand{\conv}{\mathrm{conv}}
+\newcommand{\vol}{\mathrm{vol}}
+% \newcommand{\min}{\text{min}}
+% \newcommand{\max}{\text{max}}
+% \newcommand{\ker}{\text{ker}}
+\newcommand{\im}{{\mathrm{im}}}
+\newcommand{\GL}{\mathrm{GL}}
+\newcommand{\Aut}{{\mathrm{Aut}}}
+
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\L}{\mathcal{L}}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\title{GMI 2026}
+% \author{Lukas Schnelle}
+
+\begin{document}
+
+\begin{abstract}
+	test
+\end{abstract}
+
+\newpage
+% \nocite{*}
+\section*{Literature}
+\printbibliography[heading=bibintoc,title={Bibliography}]
+
+\end{document}
